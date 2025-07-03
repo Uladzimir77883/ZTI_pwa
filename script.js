@@ -42,7 +42,7 @@ const getWeather = () => {
         clouds.textContent = `${response.data.clouds.all}%`;
         visibility.textContent = `${response.data.visibility / 1000}km`;
         errorMsg.textContent = '';
-        const pollutionURL = `http://api.openweathermap.org/data/2.5/air_pollution?lat=${response.data.coord.lat}&lon=${response.data.coord.lon}${apiInfo.key}`;
+        const pollutionURL = `https://api.openweathermap.org/data/2.5/air_pollution?lat=${response.data.coord.lat}&lon=${response.data.coord.lon}${apiInfo.key}`;
         axios.get(pollutionURL).then(response => {
             console.log(response);
             pollutionValue.textContent = `${response.data.list[0].components.pm2_5}`;
