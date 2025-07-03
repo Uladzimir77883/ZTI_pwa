@@ -1,0 +1,17 @@
+{
+    "name": "weather",
+    "short_name": "weather",
+    "theme_color": "#003366",
+    "background_color": "#003366",
+    "display": "fullscreen",
+    "orientation": "portrait",
+    "scope": "/",
+    "start_url": "/pwa/",
+    "icons" : [
+        {
+            "src" : "./icon.png",
+            "sizes" : "512x512",
+            "type" : "image/png"
+        }
+    ]
+}
